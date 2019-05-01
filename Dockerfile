@@ -1,5 +1,4 @@
-FROM python:3
-
-ADD app.py /
-
+FROM python:3-onbuild
+ADD . /todo
+WORKDIR /todo
 CMD ["python", "./app.py"]
