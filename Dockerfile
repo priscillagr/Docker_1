@@ -1,3 +1,5 @@
-FROM alpine
+FROM python:3
 
-CMD echo hello world
+ADD app.py /
+
+CMD ["python", "./app.py"]
